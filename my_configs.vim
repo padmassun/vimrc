@@ -7,6 +7,15 @@ filetype plugin on " enable file type-specific plugins
 set number
 set shiftwidth=2
 set nowrap
+" Enable CursorLine
+set cursorline
+" Default Colors for CursorLine
+highlight  CursorLine ctermbg=Yellow ctermfg=None
+" Change Color when entering Insert Mode
+autocmd InsertEnter * highlight  CursorLine ctermbg=Green ctermfg=Red
+" Revert Color to default when leaving Insert Mode
+autocmd InsertLeave * highlight  CursorLine ctermbg=Yellow ctermfg=None
+
 " set autocompletion when CTRL-P or CTRL-N are used.
 " It is also used for whole-line
 " . ... scan the current buffer
