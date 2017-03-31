@@ -4,7 +4,9 @@ syntax on          " enable syntax highlighting
 filetype on        " enable file type detection
 filetype indent on " enable file type-specific indenting
 filetype plugin on " enable file type-specific plugins
-
+set number
+set shiftwidth=2
+set nowrap
 " set autocompletion when CTRL-P or CTRL-N are used.
 " It is also used for whole-line
 " . ... scan the current buffer
