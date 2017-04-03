@@ -3,6 +3,7 @@ syntax on          " enable syntax highlighting
 filetype on        " enable file type detection
 filetype indent on " enable file type-specific indenting
 filetype plugin on " enable file type-specific plugins
+runtime macros/matchit.vim
 set number
 set shiftwidth=2
 set nowrap
