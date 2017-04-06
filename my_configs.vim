@@ -11,8 +11,8 @@ set nowrap
 "tagbar to F8
 nmap <F8> :TagbarToggle<CR>
 nmap <F9> :NERDTreeToggle<CR>
-nmap <F2> :bnext<CR>
-nmap <F3> :bprevious<CR>
+nmap <F3> :bnext<CR>
+nmap <F2> :bprevious<CR>
 imap jj <Esc>
 " Set colorscheme to elflord
 colorscheme elflord
