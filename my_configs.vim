@@ -7,19 +7,17 @@ runtime macros/matchit.vim
 set number
 set shiftwidth=2
 set nowrap
-" Set cursor to change color in different modes. 
-if &term =~ "xterm\\|rxvt"
-  " use an orange cursor in insert mode
-  let &t_SI = "\<Esc>]12;green\x7"
-  " use a red cursor otherwise
-  let &t_EI = "\<Esc>]12;red\x7"
-  silent !echo -ne "\033]12;red\007"
-  " reset cursor when vim exits
-  autocmd VimLeave * silent !echo -ne "\033]112\007"
-  " use \003]12;gray\007 for gnome-terminal and rxvt up to version 9.21
-endif
+
+"tagbar to F8
+nmap <F8> :TagbarToggle<CR>
+nmap <F9> :NERDTreeToggle<CR>
+nmap <F2> :bnext<CR>
+nmap <F3> :bprevious<CR>
+imap jj <Esc>
 " Set colorscheme to elflord
 colorscheme elflord
+"Set smart tabs with airline
+let g:airline#extensions#tabline#enabled = 1
 
 " set autocompletion when CTRL-P or CTRL-N are used.
 " It is also used for whole-line
